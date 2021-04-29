@@ -4,8 +4,9 @@ using UnityEngine;
 
 public class Controller : MonoBehaviour
 {
-    float rotationSpeed = 120f;
+    float rotationSpeed = 1.5f;
     float movementSpeed = 3f;
+    float angle = 0f;
     // Start is called before the first frame update
     void Start()
     {
@@ -22,13 +23,17 @@ public class Controller : MonoBehaviour
         
         bool turnLeft = Input.GetKey(KeyCode.Q);
         bool turnRight = Input.GetKey(KeyCode.E);
+
         if (turnLeft){
-            transform.Rotate(0,-rotationSpeed*time,0);
+            angle += -rotationSpeed*time;
         }
         if(turnRight){
-            transform.Rotate(0,rotationSpeed*time,0);
+            angle += +rotationSpeed*time;
         }
 
+        Vector3 targetDirection = new Vector3(Mathf.Sin(angle), 0, Mathf.Cos(angle));
+        this.transform.rotation = Quaternion.LookRotation(targetDirection);
+        
         transform.position += transform.forward*time*moveVertical*movementSpeed;
         transform.position += transform.right*time*moveHorizontal*movementSpeed;
     }
