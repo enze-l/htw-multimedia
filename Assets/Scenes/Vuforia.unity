@@ -137,7 +137,7 @@ GameObject:
   - component: {fileID: 35299952}
   - component: {fileID: 35299951}
   m_Layer: 0
-  m_Name: VirtualButton
+  m_Name: ButtonGoBackward
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -266,7 +266,7 @@ GameObject:
   - component: {fileID: 62089872}
   - component: {fileID: 62089871}
   m_Layer: 0
-  m_Name: VirtualButton
+  m_Name: ButtonGoForward
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -863,7 +863,7 @@ GameObject:
   - component: {fileID: 469211223}
   - component: {fileID: 469211222}
   m_Layer: 0
-  m_Name: VirtualButton
+  m_Name: ButtonTurnRight
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1555,7 +1555,7 @@ GameObject:
   - component: {fileID: 1210024434}
   - component: {fileID: 1210024433}
   m_Layer: 0
-  m_Name: VirtualButton
+  m_Name: ButtonTurnLeft
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
