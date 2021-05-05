@@ -2,7 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class ARController : MonoBehaviour
+public class ARController : MonoBehaviour, IVirtualButtonEventHandler
 {
     // Start is called before the first frame update
     void Start()
