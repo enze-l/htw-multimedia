@@ -4,8 +4,8 @@ using UnityEngine;
 
 public class Controller : MonoBehaviour
 {
-    float rotationSpeed = 1.5f;
-    float movementSpeed = 3f;
+    public float rotationSpeed = 1.5f;
+    public float movementSpeed = 3f;
     float angle = 0f;
     // Start is called before the first frame update
     void Start()
